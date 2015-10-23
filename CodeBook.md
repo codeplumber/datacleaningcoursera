@@ -1,49 +1,31 @@
-a code book that describes the variables, the data, and any transformations or
-work that you performed to clean up the data
+Course Project for the Coursera course "Getting and Cleaning Data"
 
 ## Project Description
-Short description of the project
+The task was to extract the mean values of a given data set.
+The data set was given here:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ##Study design and data processing
 
 ###Collection of the raw data
-Description of how the data was collected.
+The raw data was downloaded and unzipped.
 
 ###Notes on the original (raw) data
-Some additional notes (if avaialble, otherwise you can leave this section out).
+The original dataset consists of several files which a basically split in to the
+'test data' and 'training data'.
 
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-Description on how to create the tidy data file (1. download the data, ...)/
+To create the tidy data set do the following steps:
+ - Download the zip file
+ - Unzip the zip file
+ - Rename the main folder to 'UCI_HAR_Dataset'
+ - Make sure the folder is in the R working directory
+ - Run the R script 'run_analysis.R'
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
-
-##Description of the variables in the tiny_data.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
-
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels).
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
-
-##Sources
-Sources you used if any, otherise leave out.
-
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
+The script reads in the different data sets and merges them into one big file.
+Only the 66 values for 'mean' and 'std' (standard deviation) are taken into account.
+The summary file consists of means for all the mean and std values for each
+activity for each subject.
