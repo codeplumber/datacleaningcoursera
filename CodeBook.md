@@ -13,6 +13,8 @@ The raw data was downloaded and unzipped.
 ###Notes on the original (raw) data
 The original dataset consists of several files which a basically split in to the
 'test data' and 'training data'.
+The downloaded data set has also a README.txt file which explains in detail
+all the available files and variables.
 
 ##Creating the tidy datafile
 
