@@ -1,5 +1,6 @@
 # This script assumes that the libraries 'plyr' and 'dplyr' are installed and loaded.
-
+require(plyr)
+require(dplyr)
 ## 1. Merges the training and the test sets to create one data set.
 ## 2. Extracts only the measurements on the mean and standard deviation 
 features <- read.table("UCI_HAR_Dataset/features.txt", header = FALSE, col.names = c("id", "features"))
