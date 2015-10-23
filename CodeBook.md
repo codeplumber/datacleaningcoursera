@@ -24,7 +24,8 @@ To create the tidy data set do the following steps:
  - Unzip the zip file
  - Rename the main folder to 'UCI_HAR_Dataset'
  - Make sure the folder is in the R working directory
- - Run the R script 'run_analysis.R'
+ - Run the R script 'run_analysis.R'. The script assumes that the libraries
+  'plyr' and 'dplyr' are installed and loaded.
 
 ###Cleaning of the data
 The script reads in the different data sets and merges them into one big file.
